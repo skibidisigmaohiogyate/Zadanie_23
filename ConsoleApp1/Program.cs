@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ConsoleApp1;
+
+class PlikGlowny
+{
+    static void Main(string[] args)
+    {
+        Tablica tablica = new Tablica();
+
+        int[] tab = tablica.Tworzenie_tablicy();
+
+        for (int i = 0; i < tab.Length; i++)
+        {
+            Console.WriteLine(tab[i]);
+        }
+    }
+  
+}
